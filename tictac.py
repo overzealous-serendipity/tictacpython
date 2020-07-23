@@ -90,11 +90,11 @@ while play:
             try:
                 column_choice = int(input("What column do you want to play? (0, 1, 2): "))
             except ValueError:
-                print("Error: make sure you input row/column as 0 1 or 2.")
+                print("Error: Please enter a numerical value.")
             try:
                 row_choice = int(input("What row do you want to play? (0, 1, 2): "))
             except ValueError:
-                print("Error: make sure you input row/column as 0 1 or 2.")
+                print("Error: Please enter a numerical value.")
 
             game, played = game_board(game, current_player, row_choice, column_choice)
 
@@ -104,7 +104,7 @@ while play:
             if again.lower() == "y":
                 print("restarting")
             elif again.lower() == "n":
-                print("laters")
+                print("Catch you later")
                 play = False
             else:
                 print("Not a valid answer")
